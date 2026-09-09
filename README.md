@@ -1,12 +1,17 @@
-# NegoLog
+# NegoLog V2
 
 **Build negotiation agents. Run tournaments. Understand their decisions.**
 
-NegoLog is a **Python framework for bilateral automated negotiation and
+NegoLog V2 is a **Python framework for bilateral automated negotiation and
 opponent-model assessment**. Two agents negotiate over a domain, exchange offers,
 and try to reach an agreement. You choose the strategies, preference profiles,
 deadlines and analyses; NegoLog runs the sessions and produces inspectable logs
 and plots.
+
+This V2 distribution is maintained by Mehmet Onur Keskin and continues the
+[original NegoLog project](https://github.com/aniltrue/NegoLog). Its original
+authors, GPLv3 license and published framework citation are retained. Related
+updates are also proposed in [upstream PR #2](https://github.com/aniltrue/NegoLog/pull/2).
 
 [Start here](#quickstart) · [Usage guides](docs-source/README.md) ·
 [Component catalog](docs-source/components.rst) ·
@@ -30,11 +35,10 @@ Each agent's **utility profile** scores those bids. A **strategy** decides what
 to offer or accept; an **opponent model** estimates the other side's preferences
 from received offers.
 
-> **Maintenance preview:** these instructions match
-> [PR #2](https://github.com/aniltrue/NegoLog/pull/2), which is awaiting review.
-> The clone command below selects that branch. Existing users should read the
-> [migration checklist](MAINTENANCE.md#migration-quick-reference): preference APIs and
-> several model and agent behaviors have changed since the original version.
+> **NegoLog V2 — version 2.0.0.** See the [release notes](CHANGELOG.md) and
+> [migration checklist](MAINTENANCE.md#migration-quick-reference) before upgrading
+> an existing experiment. Preference APIs and several model and agent behaviors
+> have changed since the original version.
 
 ## Quickstart
 
@@ -45,11 +49,11 @@ access; the bundled example runs locally on the CPU.
 ### 1. Get the code
 
 ```sh
-git clone --branch maintenance/agent-model-framework-updates --single-branch https://github.com/aniltrue/NegoLog.git
-cd NegoLog
+git clone https://github.com/monurkeskin/NegoLogV2.git
+cd NegoLogV2
 ```
 
-Already viewing a checkout of this branch? Run the next commands from its root.
+Already viewing a V2 checkout? Run the next commands from its root.
 
 ### 2. Install dependencies
 
@@ -231,7 +235,7 @@ methods when your work relies on them.
 ## Help and contributing
 
 Start with [troubleshooting](docs-source/troubleshooting.rst). If the issue
-persists, [open an issue](https://github.com/aniltrue/NegoLog/issues) with your
+persists, [open an issue](https://github.com/monurkeskin/NegoLogV2/issues) with your
 revision, environment, minimal configuration and traceback. The
 [contribution guide](CONTRIBUTING.md) covers bug reports, documentation fixes,
 new components, and the checks to run before a pull request.

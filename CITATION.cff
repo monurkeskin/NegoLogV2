@@ -3,7 +3,9 @@ message: >-
   If you use NegoLog in your research, please cite the IJCAI 2024 paper
   listed in preferred-citation and record the code revision used.
 type: software
-title: NegoLog
+title: NegoLog V2
+version: 2.0.0
+date-released: "2026-09-09"
 authors:
   - family-names: Doğru
     given-names: Anıl
@@ -11,8 +13,8 @@ authors:
     given-names: Mehmet Onur
   - family-names: Aydoğan
     given-names: Reyhan
-repository-code: https://github.com/aniltrue/NegoLog
-url: https://github.com/aniltrue/NegoLog
+repository-code: https://github.com/monurkeskin/NegoLogV2
+url: https://github.com/monurkeskin/NegoLogV2
 license: GPL-3.0
 abstract: >-
   A Python framework for bilateral automated negotiation and

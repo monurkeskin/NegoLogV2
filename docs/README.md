@@ -1,4 +1,4 @@
-# Looking for the NegoLog user guide?
+# Looking for the NegoLog V2 user guide?
 
 Start with the [current repository README](../README.md), then choose:
 

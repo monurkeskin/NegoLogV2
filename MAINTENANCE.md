@@ -1,7 +1,7 @@
-# Migration and compatibility
+# Migrating to NegoLog V2
 
-Use this guide when moving an existing experiment or extension to the current
-checkout. For a first run, start with the [README](README.md); for available
+Use this guide when moving an existing experiment or extension to NegoLog V2
+(2.0.0). The [release notes](CHANGELOG.md) summarize this major update. For a first run, start with the [README](README.md); for available
 classes, use the [component catalog](docs-source/components.rst).
 
 ## Migration quick reference

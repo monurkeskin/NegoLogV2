@@ -42,7 +42,7 @@ exact commands. There is no need to change the system execution policy.
 ``quickstart.yaml`` is missing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-These guides accompany the maintenance preview branch, not an older checkout.
+These guides accompany NegoLog V2. Older NegoLog checkouts may lack this example.
 Check ``git branch --show-current`` and ``git rev-parse HEAD``, then follow
 :doc:`getting-started` to obtain the matching revision. Preserve an existing
 experiment's checkout instead of replacing it merely to run this example.

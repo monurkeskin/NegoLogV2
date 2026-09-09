@@ -1,10 +1,10 @@
-# Contributing to NegoLog
+# Contributing to NegoLog V2
 
 You can help by making an example easier to follow, reporting a reproducible
 problem, contributing a domain, or improving a component. Start with a small
 change that another researcher can run and review.
 
-[Report an issue](https://github.com/aniltrue/NegoLog/issues) ·
+[Report an issue](https://github.com/monurkeskin/NegoLogV2/issues) ·
 [Browse the framework](README.md) · [Component catalog](docs-source/components.rst) ·
 [Migration notes](MAINTENANCE.md)
 
