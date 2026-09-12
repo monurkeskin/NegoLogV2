@@ -66,7 +66,7 @@ The bundled engines also run standalone from this checkout:
    python examples/cbom_standalone.py demo --output results/cbom-standalone-python.json
    java -jar agents/CBOM/java/build/cbom.jar demo --output results/cbom-standalone-java.json
 
-The independent `CBOM paper-code repository <https://github.com/monurkeskin/CBOM>`_
+The independent `CBOM paper-code repository <https://github.com/monurkeskin/Conflict-Based-Negotiation-Strategy-Appl-Intell-2023>`_
 has the same engines, model-only examples, a Java API/protocol guide and the
 method provenance. Its Python engine and the standalone wrapper have no runtime
 dependencies; the wrapper can run without installing the framework.

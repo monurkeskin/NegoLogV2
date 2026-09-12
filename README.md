@@ -10,8 +10,8 @@ and plots.
 
 NegoLog V2 continues the framework created by Anıl Doğru, Mehmet Onur Keskin
 and the original contributors. Its GPLv3 license and published framework
-citation are retained. The CBOM integration also ships in the maintained
-[monurkeskin/NegoLogV2 distribution](https://github.com/monurkeskin/NegoLogV2).
+citation are retained. This repository maintains V2 of the
+[original NegoLog framework](https://github.com/aniltrue/NegoLog).
 
 [Start here](#quickstart) · [Usage guides](docs-source/README.md) ·
 [Component catalog](docs-source/components.rst) ·
@@ -50,7 +50,7 @@ access; the bundled example runs locally on the CPU.
 ### 1. Get the code
 
 ```sh
-git clone https://github.com/aniltrue/NegoLog.git
+git clone https://github.com/monurkeskin/NegoLog-IJCAI-2024.git NegoLog
 cd NegoLog
 ```
 
@@ -183,7 +183,7 @@ strategy in its own persistent process. Build it before starting timed sessions.
 
 The [CBOM guide](docs-source/cbom.rst) covers one-session runs, independent
 Python/Java demos, settings, termination reasons and troubleshooting.
-The [standalone CBOM repository](https://github.com/monurkeskin/CBOM) provides the
+The [standalone CBOM repository](https://github.com/monurkeskin/Conflict-Based-Negotiation-Strategy-Appl-Intell-2023) provides the
 method reference, implementation differences and language-parity limits.
 For studies using this agent and framework, cite the **CBOM 2023 paper** and the
 **NegoLog 2024 paper**, and record both software revisions.
@@ -271,7 +271,7 @@ methods when your work relies on them.
 ## Help and contributing
 
 Start with [troubleshooting](docs-source/troubleshooting.rst). If the issue
-persists, [open an issue](https://github.com/monurkeskin/NegoLogV2/issues) with your
+persists, [open an issue](https://github.com/monurkeskin/NegoLog-IJCAI-2024/issues) with your
 revision, environment, minimal configuration and traceback. The
 [contribution guide](CONTRIBUTING.md) covers bug reports, documentation fixes,
 new components, and the checks to run before a pull request.

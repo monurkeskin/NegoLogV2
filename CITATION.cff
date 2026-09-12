@@ -13,8 +13,8 @@ authors:
     given-names: Mehmet Onur
   - family-names: Aydoğan
     given-names: Reyhan
-repository-code: https://github.com/aniltrue/NegoLog
-url: https://github.com/aniltrue/NegoLog
+repository-code: https://github.com/monurkeskin/NegoLog-IJCAI-2024
+url: https://github.com/monurkeskin/NegoLog-IJCAI-2024
 license: GPL-3.0
 abstract: >-
   A Python framework for bilateral automated negotiation and
