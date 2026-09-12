@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "paper_url": "https://doi.org/10.24963/ijcai.2024/998",
+  "pdf_sha256": "c337f57efc54afcc3f99b85c5541b6628d28d24e187bbdbc9e6f8caa9f25532a",
+  "pdf_reference": "Publisher PDF",
+  "verification": "Compared with the cited paper PDF; page numbers count from its first page.",
+  "figures": [
+    {
+      "file": "session-process.png",
+      "figure": "Figure 1; fig:negotiation_session_process",
+      "pdf_page": 2,
+      "source_file": "Figures/NegoLogModule.png",
+      "source_sha256": "83d9a21c2612edfe17d30f6e273c2f318cf73d399ec21f8495fcd05f61018e60",
+      "sha256": "83d9a21c2612edfe17d30f6e273c2f318cf73d399ec21f8495fcd05f61018e60",
+      "conversion": "Unmodified source image.",
+      "display_file": "session-process.svg",
+      "display_sha256": "69aa5a14ef3d590d3fd1686868af3b0ef72d9645931bd2f799d633cf8f98467c",
+      "display_note": "SVG places the unmodified image over white, matching the paper and keeping black text visible in dark themes."
+    },
+    {
+      "file": "domain-spaces.png",
+      "figure": "Figure 2; fig:domains_exmaples",
+      "pdf_page": 2,
+      "source_file": "Figures/Domains.png",
+      "source_sha256": "05e08f5126cbea51fe148b4be8a7c44decdad1b2acdb02ca30bce5c69b97f4a2",
+      "sha256": "05e08f5126cbea51fe148b4be8a7c44decdad1b2acdb02ca30bce5c69b97f4a2",
+      "conversion": "Unmodified source image.",
+      "display_file": "domain-spaces.svg",
+      "display_sha256": "0a38bf946b7117439e9757fd77ace1473a1cffc694ed66b4e2613d1ca8d98123",
+      "display_note": "SVG places the unmodified image over white, matching the paper and keeping black text visible in dark themes."
+    },
+    {
+      "file": "paper-analyses.png",
+      "figure": "Figure 4; fig:heatmap_examples",
+      "pdf_page": 3,
+      "source_file": "Figures/HeatMaps.png",
+      "source_sha256": "e6350392fb0671b30311d2c6a05be8d82fcb788757a8c6eaa8dbe2fa90bbbbdf",
+      "sha256": "e6350392fb0671b30311d2c6a05be8d82fcb788757a8c6eaa8dbe2fa90bbbbdf",
+      "conversion": "Unmodified source image.",
+      "display_file": "paper-analyses.svg",
+      "display_sha256": "117d12ddb9977c0af888f797bdaa7c3ce7042946ff25ee37307ff2e6fa35fd7c",
+      "display_note": "SVG places the unmodified image over white, matching the paper and keeping black text visible in dark themes."
+    }
+  ]
+}

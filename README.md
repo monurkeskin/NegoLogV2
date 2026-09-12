@@ -1,24 +1,62 @@
-# NegoLog V2
+# NegoLog: An Integrated Python-based Automated Negotiation Framework with Enhanced Assessment Components — [IJCAI 2024]
 
-**Build negotiation agents. Run tournaments. Understand their decisions.**
+Anıl Doğru · Mehmet Onur Keskin · Catholijn M. Jonker · Tim Baarslag · Reyhan Aydoğan
 
-NegoLog V2 is a **Python framework for bilateral automated negotiation and
-opponent-model assessment**. Two agents negotiate over a domain, exchange offers,
-and try to reach an agreement. You choose the strategies, preference profiles,
-deadlines and analyses; NegoLog runs the sessions and produces inspectable logs
-and plots.
+[Paper](https://doi.org/10.24963/ijcai.2024/998) · [Try NegoLog V2](#quickstart) · [Usage guides](docs-source/README.md) · [Components](docs-source/components.rst) · [Citation](#cite-negolog)
 
-NegoLog V2 continues the framework created by Anıl Doğru, Mehmet Onur Keskin
-and the original contributors. Its GPLv3 license and published framework
-citation are retained. This repository maintains V2 of the
-[original NegoLog framework](https://github.com/aniltrue/NegoLog).
+An agent can reach a good agreement for different reasons: its bidding tactic,
+its estimate of the opponent's preferences, or the opportunities in the domain.
+**NegoLog lets researchers examine those components as well as the final score.**
+It runs bilateral automated negotiations and records the offers, outcomes and
+opponent-model estimates needed to understand them.
 
-[Start here](#quickstart) · [Usage guides](docs-source/README.md) ·
-[Component catalog](docs-source/components.rst) ·
-[IJCAI 2024 paper](https://www.ijcai.org/proceedings/2024/998) ·
-[Cite NegoLog](#cite-negolog) · [Get help](#help-and-contributing)
+## Inside a negotiation
 
-![NegoLog workflow: configure a domain, agents and analyses; run negotiation sessions; inspect outcomes, offer histories and model accuracy.](docs-source/_static/workflow.svg)
+![Paper Figure 1: two negotiating agents, independently observing opponent preference estimators, a session manager and loggers.](docs/paper/session-process.svg)
+
+*Figure 1 from the IJCAI 2024 paper. Several opponent models can observe the same
+session, making it possible to assess preference estimation independently of the
+strategy that produced the offers.*
+
+A **bid** assigns a value to every issue. Each party's utility profile scores
+those bids. A strategy decides what to offer or accept, while an opponent model
+estimates the other party's preferences from the received offers. The session
+manager coordinates their turns under the alternating-offers protocol.
+
+## The domain is part of the experiment
+
+![Paper Figure 2: four outcome spaces showing low/high opposition and balanced/unbalanced profiles.](docs/paper/domain-spaces.svg)
+
+*Figure 2. Each point is one bid, plotted by its utility to the two parties.
+Opposition and balance change the opportunities available to the agents.*
+
+NegoLog's domain tools let you vary the number of issues and values and inspect
+the resulting preference space. Tournament settings then determine agent pairs,
+role order, deadlines and repetitions. The [configuration guide](docs-source/tutorials.rst)
+explains the current domain format and generation tools.
+
+## From offers to an explanation
+
+Table 1 in the paper organizes assessment into three views:
+
+| View | Questions and analyses described in the paper |
+| --- | --- |
+| Negotiation process | Offer distribution, move analysis, sensitivity and opponent awareness |
+| Negotiation outcome | Individual utilities, social welfare, agreement rate/time and distances to reference outcomes |
+| Opponent model | Utility error, rank correlation, move prediction and estimated efficient outcomes |
+
+![Paper Figure 4: opponent-based Nash-distance heatmap and domain-based individual-utility heatmap.](docs/paper/paper-analyses.svg)
+
+*Figure 4: examples of opponent- and domain-based analysis in the paper. These
+illustrate the analysis interface, rather than a new benchmark ranking.*
+
+This repository maintains **NegoLog V2**, continuing the
+[original framework](https://github.com/aniltrue/NegoLog). The current
+[component catalog](docs-source/components.rst) connects these analysis families
+to runnable loggers, agents and opponent models. The
+[migration notes](MAINTENANCE.md#migration-quick-reference) record changes to APIs,
+metrics and agent behavior since the paper's implementation.
+[Figure and table sources](docs/paper/README.md).
 
 ## What can I do with NegoLog?
 
@@ -29,12 +67,6 @@ citation are retained. This repository maintains V2 of the
 | Run a comparison | Configurable pairings, both role orders, repeated sessions, Excel summaries and plots | [Your first tournament](#quickstart) |
 | Use CBOM in Python or Java | The paper's strategy with an actively updated CBOM model in either language | [Run CBOM](#run-cbom-in-python-or-java) |
 | Explore negotiation domains | Bundled discrete domains, a generator, profile editing and a local web interface | [Use the web interface](#web-interface) |
-
-New to automated negotiation? An **issue** is a topic such as delivery time; a
-**value** is one choice for that issue. A **bid** assigns a value to every issue.
-Each agent's **utility profile** scores those bids. A **strategy** decides what
-to offer or accept; an **opponent model** estimates the other side's preferences
-from received offers.
 
 > **NegoLog V2 — version 2.1.0.** See the [release notes](CHANGELOG.md) and
 > [migration checklist](MAINTENANCE.md#migration-quick-reference) before upgrading
